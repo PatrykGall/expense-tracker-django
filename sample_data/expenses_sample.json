@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Jedzenie",
+    "amount": "35.50",
+    "date": "2026-06-19",
+    "description": "Obiad"
+  },
+  {
+    "category": "Transport",
+    "amount": "250.00",
+    "date": "2026-06-18",
+    "description": "Paliwo"
+  },
+  {
+    "category": "Rachunki",
+    "amount": "120.00",
+    "date": "2026-06-17",
+    "description": "Internet"
+  },
+  {
+    "category": "Zakupy",
+    "amount": "89.99",
+    "date": "2026-06-16",
+    "description": "Produkty domowe"
+  },
+  {
+    "category": "Rozrywka",
+    "amount": "45.00",
+    "date": "2026-06-15",
+    "description": "Kino"
+  }
+]
