@@ -70,10 +70,10 @@ expense_tracker/
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
-├── db.sqlite3
+├── sample_data/
+│   └── expenses_sample.json
 ├── manage.py
-└── README.md
-
-## Przykładowe dane
-
-W folderze `sample_data` znajduje się plik `expenses_sample.json`, który zawiera przykładowe dane wejściowe dla aplikacji.
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
