@@ -1,0 +1,26 @@
+{% extends "expenses/base.html" %}
+
+{% block content %}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="h3 mb-4">Usuń wydatek</h1>
+
+        <p>Czy na pewno chcesz usunąć ten wydatek?</p>
+
+        <ul>
+            <li><strong>Kategoria:</strong> {{ expense.category.name }}</li>
+            <li><strong>Kwota:</strong> {{ expense.amount }} zł</li>
+            <li><strong>Data:</strong> {{ expense.date }}</li>
+            <li><strong>Opis:</strong> {{ expense.description }}</li>
+        </ul>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Tak, usuń</button>
+            <a href="{% url 'expense_list' %}" class="btn btn-secondary">Anuluj</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

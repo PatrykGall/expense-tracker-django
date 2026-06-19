@@ -1,0 +1,42 @@
+{% extends "expenses/base.html" %}
+
+{% block content %}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="h3 mb-4">{{ title }}</h1>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                {{ form.category.label_tag }}
+                {{ form.category }}
+                {{ form.category.errors }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.amount.label_tag }}
+                {{ form.amount }}
+                {{ form.amount.errors }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.date.label_tag }}
+                {{ form.date }}
+                {{ form.date.errors }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.description.label_tag }}
+                {{ form.description }}
+                {{ form.description.errors }}
+            </div>
+
+            <button type="submit" class="btn btn-success">Zapisz</button>
+            <a href="{% url 'expense_list' %}" class="btn btn-secondary">Anuluj</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

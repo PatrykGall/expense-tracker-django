@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor wydatków domowych</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'expense_list' %}">Monitor wydatków domowych</a>
+        <a class="btn btn-success" href="{% url 'expense_create' %}">Dodaj wydatek</a>
+    </div>
+</nav>
+
+<main class="container">
+    {% block content %}
+    {% endblock %}
+</main>
+
+</body>
+</html>
