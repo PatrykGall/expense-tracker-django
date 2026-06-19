@@ -22,6 +22,7 @@ Projekt realizuje wzorzec architektoniczny MVC w postaci stosowanej przez Django
 Aplikacja pozwala zarządzać domowymi wydatkami poprzez dodawanie, edycję, usuwanie i filtrowanie pozycji.  
 Projekt został przygotowany jako zadanie nr 13: System monitorowania wydatków domowych.
 
+
 ## Funkcjonalności
 
 Aplikacja umożliwia:
@@ -72,3 +73,7 @@ expense_tracker/
 ├── db.sqlite3
 ├── manage.py
 └── README.md
+
+## Przykładowe dane
+
+W folderze `sample_data` znajduje się plik `expenses_sample.json`, który zawiera przykładowe dane wejściowe dla aplikacji.
